@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Browser</title>
+</head>
+
+<body class="bg-purple-100">
+
+
+  <nav class="fixed h-screen w-60 bg-gray-700 text-white flex flex-col px-4 py-6">
+
+
+    <div class="space-y-3">
+
+
+      <div class="text-xl font-bold flex items-center">
+        <div>Task Manager</div>
+      </div>
+
+      <div class="space-y-1">
+        <div class="px-3 py-2 rounded-md flex items-center hover:bg-indigo-500 cursor-pointer">
+          <span class="material-icons pr-2">home</span> Home
+        </div>
+        <div class="px-3 py-2 rounded-md flex items-center hover:bg-indigo-500 cursor-pointer">
+          <span class="material-icons pr-2">assignment</span>Tasks
+        </div>
+        <div class="px-3 py-2 rounded-md flex items-center hover:bg-indigo-500 cursor-pointer">
+          <span class="material-icons-outlined pr-2">calendar_month</span>Calendar
+        </div>
+        <div class="px-3 py-2 rounded-md flex items-center hover:bg-indigo-500 cursor-pointer">
+          <span class="material-icons-outlined pr-2">analytics</span>Analytics
+        </div>
+        <div class="px-3 py-2 rounded-md flex items-center hover:bg-indigo-500 cursor-pointer">
+          <span class="material-icons-outlined pr-2">archive</span>Archived
+        </div>
+      </div>
+
+
+      <div class="space-y-1">
+        <div class="text-xs text-gray-300 uppercase py-2">
+          Your Teams
+        </div>
+
+        <div class="px-3 py-2 rounded-md flex items-center hover:bg-indigo-500 cursor-pointer">
+          <span class=" text-yellow-400 material-icons mr-2">design_services</span>Design Team
+        </div>
+        <div class="px-3 py-2 rounded-md flex items-center hover:bg-indigo-500 cursor-pointer">
+          <span class="material-icons  border border-white rounded mr-2 text-white bg-green-500 font-bold">code</span>Development Team
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="mt-auto border-t border-gray-600 pt-4 space-y-2">
+
+      <div class="bg-gray-800 p-2 rounded-md flex items-center gap-2">
+        <div
+          class="cursor-pointer flex items-center justify-center
+                w-9 h-9 rounded-full bg-indigo-600 text-white">
+          <span class="material-icons text-xl">person</span>
+        </div>
+        <div class="text-sm flex flex-col">
+          <div>Sarah Smith</div>
+          <div>sarah@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 p-3 rounded-md">
+        <div class=" bg-gray-700 rounded-md text-sm text-white hover:text-red-400 cursor-pointer flex items-center px-4 py-1 gap-2">
+          <span class="material-icons">logout</span>Log Out
+        </div>
+      </div>
+        
+    </div>
+
+  </nav>
+
+  <div class="ml-60 flex-1 flex flex-col h-screen">
+
+
+    <div class="h-16 bg-white flex items-center justify-between px-6">
+
+      <div class="flex items-center gap-2 bg-gray-100 mb-1 px-3 py-1 rounded-md w-80">
+        <div class="text-gray-500"><span class="material-icons">search</span></div>
+        <input
+          type="text"
+          placeholder="Search tasks"
+          class="bg-transparent outline-none w-full text-sm"
+        />
+      </div>
+
+
+      <div class="flex items-center gap-4">
+        <div class="relative cursor-pointer flex items-center justify-center">
+          <span class="material-icons-outlined text-3xl">check_box</span>
+        </div>
+
+        <div class="relative cursor-pointer flex items-center justify-center">
+          <span class="material-icons-outlined text-3xl">folder</span>
+        </div>
+
+        <div class="relative cursor-pointer flex items-center justify-center">
+          <span class="material-icons-outlined text-3xl">chat</span>
+          <span
+            class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px]
+                  w-4 h-4 flex items-center justify-center rounded-full">
+            2
+          </span>
+        </div>
+
+
+        <div class="relative cursor-pointer flex items-center justify-center">
+          <span class="material-icons-outlined text-3xl">notifications</span>
+          <span
+            class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px]
+                  w-4 h-4 flex items-center justify-center rounded-full">
+            1
+          </span>
+        </div>
+
+        <div
+          class="cursor-pointer flex items-center justify-center
+                w-9 h-9 rounded-full bg-indigo-600 text-white">
+          <span class="material-icons text-xl">person</span>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+<div class="flex-1 pl-4 py-2">
+  <div class="grid grid-rows-[2fr_3fr_2fr] gap-2 grid-cols-[2fr_4fr_3fr]
+              h-full">
+
+    <div class="col-span-2 flex flex-col gap-2">
+
+
+      <div class="">
+        <h1 class="font-bold text-xl text-gray-800">
+          Welcome Back, Vedant! 👋
+        </h1>
+      </div>
+
+      <div>
+        <p class="text-sm text-gray-400">
+          Here are the task summary for you
+        </p>
+      </div>
+
+
+      <div class="flex gap-3">
+
+        <div
+          class="flex flex-col w-46 h-16 px-4 pt-2 pb-2 rounded-xl
+                bg-linear-to-br from-blue-500 via-indigo-500 to-purple-500
+                text-white shadow">
+
+          <span class="text-sm opacity-80">
+            Total Tasks
+          </span>
+
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-l">
+              24
+            </span>
+
+  
+            <span class="material-icons-outlined text-2xl opacity-90">
+              assignment
+            </span>
+          </div>
+
+        </div>
+
+        <div
+          class="flex flex-col w-46 h-16 px-4 pt-2 pb-2 rounded-xl
+                bg-linear-to-br from-purple-500 via-fuchsia-500 to-pink-500
+                text-white shadow">
+
+          <span class="text-sm opacity-80">
+            In Progress
+          </span>
+
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-l">
+              7
+            </span>
+
+            <span class="material-icons-outlined text-2xl opacity-90">
+              pending_actions
+            </span>
+          </div>
+
+        </div>
+
+
+
+        <div
+          class="flex flex-col w-46 h-16 px-4 pt-2 pb-2 rounded-xl
+                bg-linear-to-br from-green-500 via-emerald-500 to-teal-500
+                text-white shadow">
+
+          <span class="text-sm opacity-80">
+            Completed
+          </span>
+
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-l">
+              15
+            </span>
+
+            <span class="material-icons-outlined text-2xl opacity-90">
+              check_circle
+            </span>
+          </div>
+
+        </div>
+
+        <div
+          class="flex flex-col w-46 h-16 px-4 pt-2 pb-2 rounded-xl
+                bg-linear-to-br from-orange-500 via-amber-500 to-yellow-500
+                text-white shadow">
+
+          <span class="text-sm opacity-80">
+            Archived
+          </span>
+
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-l">
+              2
+            </span>
+
+            <span class="material-icons-outlined text-2xl opacity-90">
+              archive
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <button
+          class="bg-indigo-600 text-white px-4 py-1 rounded-md
+          hover:bg-indigo-700 transition">
+          +Add New Task
+        </button>
+        
+      </div>
+
+    </div>
+
+    <div class="bg-white rounded-lg p-4 shadow flex flex-col ">
+
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center font-semibold text-gray-800 gap-1">
+            <span class="material-icons-outlined text-blue-600">
+              event
+            </span>
+            <span>Upcoming Tasks</span>
+          </div>
+
+          <button class="text-sm text-blue-600 hover:underline">
+            View All
+          </button>
+        </div>
+
+        <div class="flex items-start justify-between  px-4 mt-2 rounded-l ">
+
+
+          <div class="flex flex-col">
+            <span class="font-medium text-gray-800">
+              Sprint Review
+            </span>
+            <span class="text-sm text-gray-400">
+              10:00 AM - 11:00 AM
+            </span>
+          </div>
+
+
+          <div class="flex flex-col items-end">
+            <span class="text-sm text-gray-600">
+              Tomorrow
+            </span>
+            <span class="text-xs text-red-600 font-semibold">
+              High
+            </span>
+          </div>
+
+        </div>
+
+        <div class="flex items-start justify-between px-4 rounded-l">
+
+
+          <div class="flex flex-col">
+            <span class="font-medium text-gray-800">
+              Client Meeting
+            </span>
+            <span class="text-sm text-gray-400">
+              2:00 PM - 3:00 PM
+            </span>
+          </div>
+
+
+          <div class="flex flex-col items-end">
+            <span class="text-sm text-gray-600">
+              Today
+            </span>
+            <span class="text-xs text-yellow-600 font-semibold">
+              Medium
+            </span>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center">
+          <button class="mt-2 text-sm text-blue-600 hover:underline">
+            View All
+          </button>
+        </div>
+
+    </div>
+
+      <div class=" row-span-2 flex flex-col gap-2">
+        <div class="bg-white rounded-lg p-4 shadow flex flex-col ">
+
+
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center font-semibold text-gray-800 gap-1">
+            <span class="material-icons-outlined text-blue-600">
+              bolt
+            </span>
+            <span>Quick Access</span>
+          </div>
+
+            <span class="material-icons-outlined text-gray-500">
+              more_horiz
+            </span>
+        </div>
+
+        <div class="flex items-start justify-between m-1 px-4 py-2 rounded bg-linear-to-br from-blue-500 via-indigo-500 to-purple-500
+                text-white shadow">
+
+
+          <div class="">
+            <span class="font-medium text-white">
+              Sprint Review
+            </span>
+          </div>
+
+            <span class="material-icons text-white">
+              arrow_right
+            </span>
+
+        </div>
+
+         <div class="flex items-start justify-between  m-1 px-4 py-2 rounded bg-linear-to-br from-green-500 via-emerald-500 to-teal-500
+                text-white shadow">
+
+
+          <div class="">
+            <span class="font-medium text-white">
+              View calender
+            </span>
+          </div>
+
+            <span class="material-icons text-white">
+              arrow_right
+            </span>
+
+        </div>
+        
+        <div class="flex items-start justify-between  m-1 px-4 py-2 rounded bg-linear-to-br from-purple-500 via-fuchsia-500 to-pink-500
+                text-white shadow">
+
+
+          <div class="">
+            <span class="font-medium text-white">
+              Calculare summary
+            </span>
+          </div>
+
+            <span class="material-icons text-white">
+              arrow_right
+            </span>
+
+        </div>
+        
+
+
+        </div>
+        
+        <div class="bg-white rounded-lg p-4 shadow space-y-4">
+
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-2">
+          <span class="material-icons-outlined text-blue-500">history</span>
+          <h3 class="font-semibold text-gray-800">Activity</h3>
+        </div>
+
+        <button class="text-sm text-blue-600 hover:underline">
+          View All
+        </button>
+      </div>
+
+
+      <div class="flex justify-between items-start border p-2 rounded border-gray-100 shadow hover:bg-gray-100">
+        <div class="flex gap-3">
+          <span class="material-icons-outlined text-purple-500">
+            co_present
+          </span>
+
+          <div class="flex flex-col">
+            <p class="text-sm text-gray-800">
+              <span class="font-medium">Prepare ppt</span>
+            </p>
+            <p class="text-xs text-gray-400">
+              Due 3 Apr, 2025
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+     
+
+
+
+      <div class="flex justify-between items-start border p-2 rounded border-gray-100 shadow hover:bg-gray-100">
+        <div class="flex gap-3">
+          <span class="material-icons text-yellow-300">
+            build
+          </span>
+
+          <div class="flex flex-col">
+            <p class="text-sm text-gray-800">
+              <span class="font-medium">Fix  Website issues</span>
+            </p>
+            <p class="text-xs text-gray-400">
+              Due 2 Apr, 2025
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+        
+
+      <div class="bg-white rounded-lg flex flex-col p-2">
+        <div class="flex items-center justify-between">
+          <div class="flex gap-1 items-center">
+
+            <span class="material-icons-outlined text-purple-500">
+              calendar_today
+            </span>
+            <span>Calender</span>
+          </div>
+
+          <div>
+            <span class="material-icons-outlined text-gray-500">
+              more_horiz
+            </span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="bg-white rounded-lg p-4 shadow flex flex-col gap-4">
+
+
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2 font-semibold text-gray-800">
+      <span class="material-icons-outlined text-purple-600">
+        task
+      </span>
+      <span>My Tasks</span>
+    </div>
+
+    <button class="text-sm text-blue-600 hover:underline">
+      View All
+    </button>
+  </div>
+
+
+  <div class="border-t border-gray-700 pt-3 flex items-center justify-between">
+
+
+    <div class="flex gap-2">
+      <button class="px-4 py-1 rounded-md text-sm bg-indigo-600 text-white">
+        All
+      </button>
+      <button class="px-4 py-1 rounded-md text-sm bg-gray-100 text-gray-600 hover:bg-gray-200">
+        In Progress
+      </button>
+      <button class="px-4 py-1 rounded-md text-sm bg-gray-100 text-gray-600 hover:bg-gray-200">
+        Completed
+      </button>
+      <button class="px-4 py-1 rounded-md text-sm bg-gray-100 text-gray-600 hover:bg-gray-200">
+        Archived
+      </button>
+    </div>
+
+
+    <span class="material-icons-outlined cursor-pointer text-gray-500">
+      search
+    </span>
+  </div>
+
+  <div class="flex items-start justify-between  pt-3">
+
+    <div class="flex flex-col">
+      <span class="font-medium text-gray-800">
+        Design a Landing Page
+      </span>
+      <span class="text-sm text-gray-400">
+        Due: 20 March 2026
+      </span>
+    </div>
+
+
+    <span
+      class="px-2 py-1 rounded-md text-xs font-semibold
+             bg-yellow-100 text-yellow-800">
+      In Progress
+    </span>
+  </div>
+
+
+  <div class="flex items-start justify-between  pt-3">
+
+
+    <div class="flex flex-col">
+      <span class="font-medium text-gray-800">
+        Fix Dashboard Bugs
+      </span>
+      <span class="text-sm text-gray-400">
+        Due: 18 March 2026
+      </span>
+    </div>
+
+
+    <span
+      class="px-2 py-1 rounded-md text-xs font-semibold
+             bg-green-100 text-green-800">
+      Completed
+    </span>
+  </div>
+
+</div>
+
+
+<div class="bg-white rounded-lg p-4 shadow space-y-4">
+
+  <div class="flex items-center justify-between">
+    <div class="flex items-center justify-start gap-2">
+      <span class="material-icons-outlined text-blue-500">history</span>
+      <h3 class="font-semibold text-gray-800">Activity</h3>
+    </div>
+
+    <button class="text-sm text-blue-600 hover:underline">
+      View All
+    </button>
+  </div>
+
+
+  <div class="flex justify-between items-start">
+    <div class="flex gap-3">
+      <span class="material-icons text-gray-500">
+        person
+      </span>
+
+      <div class="flex flex-col">
+        <p class="text-sm text-gray-800">
+          <span class="font-medium">Sarah Smith</span>
+          <span class="text-blue-500"> commented on task</span>
+        </p>
+        <p class="text-xs text-gray-400">
+          Authentication - Google Login
+        </p>
+      </div>
+    </div>
+
+    <span class="text-xs text-gray-400">
+      2h ago
+    </span>
+  </div>
+
+
+  <div class="flex justify-between items-start">
+    <div class="flex gap-3">
+      <span class="material-icons text-gray-500">
+        person
+      </span>
+
+      <div class="flex flex-col">
+        <p class="text-sm text-gray-800">
+          <span class="font-medium">John Doe</span>
+          <span class="text-yellow-500"> updated task</span>
+        </p>
+        <p class="text-xs text-gray-400">
+          Gmail Login Flow
+        </p>
+      </div>
+    </div>
+
+    <span class="text-xs text-gray-400">
+      4h ago
+    </span>
+  </div>
+
+
+  <div class="flex justify-between items-start">
+    <div class="flex gap-3">
+      <span class="material-icons text-gray-500">
+        person
+      </span>
+
+      <div class="flex flex-col">
+        <p class="text-sm text-gray-800">
+          <span class="font-medium">Alex Brown</span>
+          <span class="text-green-500"> completed task</span>
+        </p>
+        <p class="text-xs text-gray-400">
+          Password Reset API
+        </p>
+      </div>
+    </div>
+
+    <span class="text-xs text-gray-400">
+      1d ago
+    </span>
+  </div>
+
+  <div class="flex justify-between items-start">
+    <div class="flex gap-3">
+      <span class="material-icons text-gray-500">
+        person
+      </span>
+
+      <div class="flex flex-col">
+        <p class="text-sm text-gray-800">
+          <span class="font-medium">VEDANT PORWAL</span>
+          <span class="text-green-500"> completed task</span>
+        </p>
+        <p class="text-xs text-gray-400">
+          Task management system using css html
+        </p>
+      </div>
+    </div>
+
+    <span class="text-xs text-gray-400">
+      1h ago
+    </span>
+  </div>
+
+</div>
+
+      <div class="bg-white rounded-lg p-4 shadow flex flex-col gap-4">
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 font-semibold text-gray-800">
+            <span class="material-icons-outlined text-indigo-600">
+              groups
+            </span>
+            <span>Teams</span>
+          </div>
+
+            <span class="material-icons-outlined text-gray-500">
+              more_horiz
+            </span>
+        </div>
+
+
+      <div class="grid grid-cols-2 gap-4">
+
+
+        <div class="border border-gray-200 shadow rounded-lg p-3 flex flex-col gap-3 hover:bg-gray-100 cursor-pointer">
+
+          <div class="flex items-start gap-2">
+            <span class="material-icons bg-yellow-500 text-white p-1 rounded-lg">
+              design_services
+            </span>
+
+            <div class="flex flex-col">
+              <span class="font-medium text-gray-800">
+                Design Team
+              </span>
+              <span class="text-sm text-gray-400">
+                5 Members
+              </span>
+            </div>
+          </div>
+
+
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-gray-400">
+              Design Team
+            </span>
+
+
+            <div class="flex -space-x-2">
+              <span class="material-icons text-gray-500 bg-gray-100 rounded-full p-1">
+                person
+              </span>
+              <span class="material-icons text-gray-500 bg-gray-100 rounded-full p-1">
+                person
+              </span>
+              <span class="material-icons text-gray-500 bg-gray-100 rounded-full p-1">
+                person
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="border border-gray-200 shadow rounded-lg p-3 flex flex-col gap-3 hover:bg-gray-50 cursor-pointer">
+
+          <div class="flex items-start gap-2">
+            <span class="material-icons bg-green-500 text-white p-1 rounded-lg">
+              code
+            </span>
+
+            <div class="flex flex-col">
+              <span class="font-medium text-gray-800">
+                Development Team
+              </span>
+              <span class="text-sm text-gray-400">
+                8 Members
+              </span>
+            </div>
+          </div>
+
+
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-gray-400">
+              Dev Team
+            </span>
+
+
+            <div class="flex -space-x-3">
+              <span class="material-icons text-gray-500 bg-gray-100 rounded-full p-1">
+                person
+              </span>
+              <span class="material-icons text-gray-500 bg-gray-100 rounded-full p-1">
+                person
+              </span>
+              <span class="material-icons text-gray-500 bg-gray-100 rounded-full p-1">
+                person
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="bg-white rounded-lg px-4 py-2 shadow space-y-4">
+
+  <div class="flex items-center gap-1">
+    <span class="material-icons text-sky-500">
+      calendar_month
+    </span>
+    <h3 class="font-semibold text-gray-800">
+      Calendar
+    </h3>
+  </div>
+
+  <div class="flex items-center justify-between">
+    <button class="text-gray-500 hover:text-gray-700">
+      ◀
+    </button>
+
+    <span class="font-medium text-gray-800">
+      February 2026
+    </span>
+
+    <button class="text-gray-500 hover:text-gray-700">
+      ▶
+    </button>
+  </div>
+
+  <div class="grid grid-cols-7 text-xs text-gray-400 text-center">
+    <span>Sun</span>
+    <span>Mon</span>
+    <span>Tue</span>
+    <span>Wed</span>
+    <span>Thu</span>
+    <span>Fri</span>
+    <span>Sat</span>
+  </div>
+
+
+  <div class="grid grid-cols-7 text-sm text-center">
+
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">1</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">2</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">3</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">4</span>
+
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">5</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">6</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">7</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">8</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">9</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">10</span>
+    <span class="py-1 rounded hover:bg-sky-100 cursor-pointer">11</span>
+
+  </div>
+
+</div>
+
+
+
+    </div>
+  </div>
+
+
+    </div>
+
+  </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
